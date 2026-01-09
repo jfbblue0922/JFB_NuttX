@@ -32,6 +32,7 @@
  */
 
 #if defined(CONFIG_STM32H7_STM32H7X3XX) || \
+    defined(CONFIG_STM32H7_STM32H7X5XX) || \
     defined(CONFIG_STM32H7_STM32H7X7XX)
 
 /****************************************************************************
@@ -675,5 +676,5 @@ struct eth_desc_s
  ****************************************************************************/
 
 #endif /* __ASSEMBLY__ */
-#endif /* CONFIG_STM32H7_STM32H7X3XX */
+#endif /* CONFIG_STM32H7_STM32H7X3XX || CONFIG_STM32H7_STM32H7X5XX  || CONFIG_STM32H7_STM32H7X7XX */
 #endif /* __ARCH_ARM_SRC_STM32H7_HARDWARE_STM32_ETHERNET_H */
